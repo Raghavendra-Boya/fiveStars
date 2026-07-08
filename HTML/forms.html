@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    WHat is form:
+    form is used to collect data the user and send it to the server 
+    <form>
+        input elements
+    </form>
+    -->
+<form action="#">
+    <!-- <label for="name">Name:</label> -->
+    <input type="text" id="name" placeholder="Enter User Name" name="UserName" required minlength="3" maxlength="15" autofocus value="argahva">
+    <!--
+    type="email": used to collect email from user
+    
+    -->
+
+    <input type="email" placeholder="Enater Email" name="Email" autocomplete="off">
+    <input type="password">
+    <input type="tel" pattern="[0-9]{10}">
+    <input type="url">
+    <input type="search">
+
+
+    <input type="number" placeholder="ENter Number"step="2" min="10" max="100">
+    <input type="date" min="2025-01-01" max="2027-01-01">
+    <input type="time">
+    <input type="datetime-local">
+    <input type="month">
+    <input type="week">
+<label for="">Gender:</label>
+    <input type="radio" name="gender" value="male" id="male" checked>
+    <label for="male">male</label>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">female</label>
+
+   <div>
+     <label for="">Skills:</label>
+   <div>
+     <input type="checkbox" name="skills" value="Python" id="python" >
+    <label for="python">Python</label>
+   </div>
+    <div>
+        <input type="checkbox" name="skills" value="Java" id="java">
+    <label for="java">Java</label>
+    </div>
+   <div>
+     <input type="checkbox" name="skills" value="JavaScript" id="javascript">
+    <label for="javascript">JavaScript</label>
+   </div>
+   </div>
+
+<button>Submit</button>
+</form>
+
+</body>
+</html>
