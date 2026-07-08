@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table, th,td{
+            border: 1px solid red;
+            
+        }
+    </style>
+</head>
+<body>
+  <!--
+  What is Table:
+  table is used to disply data in rows and columns.
+  
+  rahul HTML 10000
+  Priya CSS 20000
+  Ramesh JS 30000
+
+  Name   Subject     fees
+    rahul   HTML        10000
+    Priya   CSS         20000
+    Ramesh  JS          30000
+
+    SYntax:
+    <table>
+        <tr>
+            <th>name</th>
+            <th>subject</th>
+            <th>fees</th>
+        </tr>
+        <tr>
+            <td>rahul</td>
+            <td>HTML</td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>CSS</td>
+            <td>20000</td>
+        </tr>
+        <tr>
+            <td>Ramesh</td>
+            <td>JS</td>
+            <td>30000</td>
+        </tr>
+    </table>
+
+
+    real time application use cases:
+    -hospital applicatiom
+    -e-commerce application
+    -student management system
+    -employee management system
+    -cricket score board
+  
+  
+
+    depricated                   latest
+    <center>                       <h1 style="text-align: center;"></h1>
+    <b>                            <strong>
+    <i>                            <em>
+    <u>                            <span style="text-decoration: underline;"></span>
+    border (attribute)              style="border: 1px solid red;"
+    cellspacing (attribute)         style="border-spacing:5px ;"   
+    width (attribute)                 style="width: 50%;"  
+
+
+
+
+    padding: when ever we need a space inside the element we use padding
+    margin: when ever we need a space outside the element we use margin
+  --> 
+    
+  
+<center><h1>Heading-1</h1></center>
+<h1 style="text-align: center;">Heading-1</h1>
+
+<p><b>Lorem</b> <strong>ipsum</strong> <i>dolor</i> <em>sit</em> amet consectetur adipisicing elit. Odio, illo!</p>
+
+  <table style="border-spacing:0px ; width:50%; text-align: center; background-color: green; color:white">
+        <tr>
+            <th>name</th>
+            <th>subject</th>
+            <th>fees</th>
+        </tr>
+        <tr >
+            <td style="padding: 10px 0px; ">rahul</td>
+            <td colspan="2">HTML</td>
+            <!-- <td>10000</td> -->
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td rowspan="2">CSS</td>
+            <td>20000</td>
+        </tr>
+        <tr>
+            <td>Ramesh</td>
+            <!-- <td>CSS</td> -->
+            <td>30000</td>
+        </tr>
+    </table>
+</body>
+</html>
