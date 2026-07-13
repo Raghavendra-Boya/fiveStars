@@ -13,16 +13,16 @@
         input elements
     </form>
     -->
-<form action="#">
+<form action="#" method="post">
     <!-- <label for="name">Name:</label> -->
-    <input type="text" id="name" placeholder="Enter User Name" name="UserName" required minlength="3" maxlength="15" autofocus value="argahva">
+    <input type="hidden" id="name" placeholder="Enter User Name" name="UserName" required minlength="3" maxlength="15" autofocus value="argahva" readonly disabled >
     <!--
     type="email": used to collect email from user
     
     -->
 
     <input type="email" placeholder="Enater Email" name="Email" autocomplete="off">
-    <input type="password">
+    <input type="password" name="password">
     <input type="tel" pattern="[0-9]{10}">
     <input type="url">
     <input type="search">
@@ -56,7 +56,32 @@
    </div>
    </div>
 
-<button>Submit</button>
+   <select name="course" id="" multiple>
+    <option value="">---Select---</option>
+    <option value="java">JAVA</option>
+    <option value="py" selected>PY 2</option>
+    <option value="html">HTML</option>
+   </select>
+
+   <input type="file" accept=".pdf" multiple>
+   <input type="color" value="#ff1">
+   <input type="range" min="1" max="5" step="3">
+   <textarea name="" id="" rows="5" cols="10"></textarea>
+
+<input type="button" value="login">
+<input type="submit">
+<input type="reset" value="Reset form">
+<!-- <button title="submit button">Submit</button> -->
+</form>
+
+
+<form action="https://script.google.com/macros/s/AKfycbyBNAa7HBlmM8wrm3XIrruyPBibPm9ie6gICt08zkBDE_CQPsCfwJy25GWLsVlHY3Mq/exec" method="post">
+    <input type="text" name="namee" placeholder="enter name">
+    <input type="email" name="email" placeholder="email">
+    <input type="tel" name="mobile" placeholder="mobile">
+    <input type="password" name="password" placeholder="password">
+
+    <button>submit</button>
 </form>
 
 </body>
