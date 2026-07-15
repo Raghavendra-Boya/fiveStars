@@ -1,0 +1,81 @@
+/*
+WHat is Selector:
+A selector is used to target HTML elemnet and apply styles
+
+teacher  slev=ct student by names
+CSS= select HTML ememnts by selectors
+
+types of Selectors: 
+1. Universal selector/global selector(*)
+selects all elemnts in HTML file
+2. tag selector(tagname)::after
+targer=ts all elements of same tag
+tagname{
+property:value;
+}
+3. class Selector:(.)
+targets the multiple elements using class attribute
+4. ID selector:(#)
+targets a single uniqure element
+#idName{
+
+}
+5. group selector(,)
+apply same style for the multiple selectors
+
+6. pseudo class selctor(:)
+pseudo class selectos an element based on the state or condition
+
+slector:pseudo-clss{
+
+}
+1. :hover
+    applied when mouse is placed on element
+    2. :active
+    applied while clicking on element
+    3. :focus
+    aplied styles user click inside the input
+    4. :visited
+    apllied style already visited liks
+*/
+
+*{
+    margin: 0px;
+    /* border: none; */
+    padding: 0px;
+    font-style: italic;
+}
+p{
+    margin: 10px;
+}
+.card{
+    background-color: aquamarine;
+     width: 200px; 
+     padding: 20px;
+}
+#unique{
+    color:green;
+}
+/* p,button,h1,#unique,.card{
+    background-color: brown;
+} */
+
+.parent{
+    display: flex;
+    gap: 20px;
+}
+.card:hover{
+    background-color: blueviolet;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+.card:active{
+    background-color: chartreuse;
+}
+input:focus{
+    outline: 2px solid green;
+    border-radius: 50px;
+}
+a:visited{
+    color:green;
+}

@@ -1,0 +1,86 @@
+/*
+WHat is CSS:
+CSS(cascadng style sheet) is used to design and style HTML ELements
+
+WITHout CSS:
+
+why: 
+-without CSS website looks like document
+1. better UI
+2. reuse multiple times
+3. easy to maintanance
+4. responsive applications
+
+ways to apply css:
+1. inline css
+2. interbnal css
+3. external css
+
+1. inline css: 
+css is written directly inside the HTML opening tag using style attribute
+
+syntax:
+<tag style="property:value">
+
+advantages: 
+1. easy for single elements
+2. no need to create separate CSS file
+3. quick testing
+
+dis advantages:
+1. lenght of the cod eis increased
+2.application perfomanace is going to decrease
+3. difficult to debug
+4. can'r able to reuse the code
+5. mixes the HTML and CSS code
+
+use cases:
+1. small application(1 or 2 pages)
+
+2. internal CSS: 
+
+tagname(tag selector)
+
+a{
+
+}
+h1{
+
+}
+div{
+
+}
+
+advantanges
+1. lenght of the cod is going to reduce comapared with inline css
+2. reuse the css Styles with in the same HTML file
+3. suitable for small projects
+4. no need to create a seperate CSS file
+
+dis advantages: 
+1. cannot reuse in other pages
+2. code becomes large
+3. not suitable for large projects
+
+
+3. external CSS: 
+
+css is written in seperate CSS file
+
+adv: 
+1. reuse the style across all the pages
+2. easy to maintance
+3. faster the development
+4. better for large projects
+
+disadvantages: 
+1. required to create a separate CSS file
+2. Extra HTTP request
+
+*/
+
+
+a{
+    color:green;
+    text-decoration: none;
+}
