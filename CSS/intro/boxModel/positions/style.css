@@ -1,0 +1,74 @@
+/*
+positions is used to control where element shoukd disply on web page
+
+by defaultly, HTML elements appera one after another
+
+using position prperty: 
+-move elements any where in web page
+-fix elements on screen
+-overlay the elements
+-create badges
+-create the sticky menus
+
+types positions:
+1. static
+2. relative
+3. absolute
+4. fixed
+5. sticky
+
+
+position: value
+1. static: 
+default position of every element in HTML file
+
+2. relative: 
+moves elements relative to its original position
+
+1. position will be be reserved for the same element it not allowing any other elements
+
+3. absolute: 
+moves elements relative to nearest relative parent
+
+*/
+
+.box{
+    width: 100px;
+    height: 100px;
+
+}
+.static{
+    background-color: aqua;
+    position: static;
+    top: 200px;
+    left: 300px;
+}
+.relative{
+    background-color: brown;
+    position: relative;
+    top:0px;
+}
+.child{
+    background-color: chocolate;
+    position: absolute;
+    right: 0px;
+}
+.parent{
+    background-color: coral;
+    height: 400px;
+    position: relative;
+    width: 50%;
+    left: 200px;
+}
+
+.fixed{
+    background-color: aquamarine;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+}
+.sticky{
+    background-color: blue;
+    position: sticky;
+    top: 50px;
+}

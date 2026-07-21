@@ -1,0 +1,50 @@
+/*
+Box Model:
+1. content
+2. padding
+3. border---outline around the element
+4. margin---space ouside the border/element
+
+without box model:
+1. no spacing
+2. UI looks congested
+3. difficult to arrange elements
+4. Bad UX
+
+with Boxmodel:
+1. Peoper spacing
+2. Better UI
+3. improves readability
+4. professional layouts
+
+*/
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.heading1{
+    background-color: aquamarine;
+    padding: 20px;
+    border:2px solid red;
+    width: 300px;
+    height: 300px;
+    /* border-radius: 70%;
+     */
+     border-top-left-radius: 0%;
+     border-top-right-radius: 30%;
+     border-bottom-left-radius: 30%;
+     border-bottom-right-radius: 0%;
+     /* margin: auto; */
+     margin-bottom: 100px;
+     box-shadow: 20px 20px 10px red;
+     
+}
+
+.heading2{
+    background-color: aquamarine;
+    padding: 20px 10px 30px 40px;
+    border:1px solid red;
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;
+}

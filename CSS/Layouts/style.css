@@ -1,0 +1,64 @@
+/*
+
+why do we layouts:
+1. profesional UI
+2. Resposive Design
+3. easy alignment
+4. eaqaul spacing all the elemnts
+
+1. flex box layout
+2. grid layout
+
+1. flex layout:
+
+one dimensional layout system , we van arrange elements in any one one direction either column/row
+
+
+
+*/
+*{
+        box-sizing: border-box;
+}
+.card{
+    width: 250px;
+    background-color: rgb(247, 241, 241);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px black;
+    height: 350px;
+    /* flex-grow: 2; */
+    flex: 0 1 30%;
+}
+.card img{
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+}
+.card button{
+    padding: 10px 20px;
+    background-color: tomato;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.card button:hover{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    flex-wrap: wrap ;
+    gap: 10px;
+    flex-direction:row;
+    /* justify-content: center; */
+    /* height: 1000px; */
+    /* align-items: start; */
+}
+/* .card1{
+     flex-grow: 4;
+} */
+
+

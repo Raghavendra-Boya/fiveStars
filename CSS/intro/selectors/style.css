@@ -37,6 +37,21 @@ slector:pseudo-clss{
     aplied styles user click inside the input
     4. :visited
     apllied style already visited liks
+
+7. pseudo element selector(::)
+when we need to styles a portion of content 
+
+1. ::before
+
+
+
+8. combination selevtors
+    1. child slector
+        1.1: direct child(>)
+        1.2: indirect/decendent child(space)
+    2. sibling selector
+        1. adjecent sibling(+)
+        2. general sibling(~)
 */
 
 *{
@@ -58,6 +73,7 @@ p{
 }
 /* p,button,h1,#unique,.card{
     background-color: brown;
+
 } */
 
 .parent{
@@ -72,10 +88,81 @@ p{
 .card:active{
     background-color: chartreuse;
 }
-input:focus{
+/* input:focus{
     outline: 2px solid green;
     border-radius: 50px;
-}
+} */
 a:visited{
     color:green;
+}
+a:link{
+    color: red;
+}
+/* :checked
+
+
+
+*/
+
+input:checked+label{
+    opacity: 0.4;
+}
+li:nth-child(2){
+    color:red;
+}
+
+ul{
+    /* list-style-type: none; */
+    margin-left: 30px;
+}
+/* p::first-line{
+   color: red;
+   font-size: 30px;
+} */
+*::selection{
+   background-color: red;
+   color:blue;
+}
+li::marker{
+    color:blue;
+    font-size: 30px;
+}
+div > p{
+    color:red;
+}
+
+section~p{
+    background-color: aqua;
+}
+
+/* //CSS Selectors Ptiority: */
+
+#title{
+    color:green;
+}
+h1{
+    color:red;
+
+}
+.heading{
+    color:blue;
+}
+
+/*
+inline style--->1000
+ID selector--->100
+CLass Selector--->10
+pseudo class---->10
+element slector--->1
+pseudo element ----1
+universla selector----0
+
+
+*/
+
+#company{
+    color:red;
+}
+#company .employee{
+    color:blue;
 }
